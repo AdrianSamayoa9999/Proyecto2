@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La World Wide Web (WWW)</title>
+  <link rel="icon" href="https://media.istockphoto.com/id/1401105849/hu/vektor/www-vil%C3%A1gszint%C5%B1-webhelyszimb%C3%B3lum-internet-ikon-webhelyc%C3%ADm-f%C3%B6ldg%C3%B6mb-lapos-k%C3%B6rvonal-jel.jpg?s=170667a&w=0&k=20&c=eOTj-PyyFC6Lb5zXKAF99X953eLsV1AK4nNt7jxiaUU=" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/000/544/300/original/vector-red-technology-circle-and-computer-science-abstract-background-business-and-connection-futuristic-and-industry-4-0-concept-internet-cyber-and-network-theme.jpg');
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .container {
+      width: 75%;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .tab {
+      overflow: hidden;
+      background-color: #1a1919;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .tab button {
+      background-color: #3b3a3a;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .tab button:hover {
+      background-color: #5c5b5b;
+    }
+    .tab button.active {
+      background-color: red;
+    }
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      flex: 1;
+    }
+    .tabcontent h3 {
+      text-align: center;
+    }
+    .tabcontent p {
+      text-align: center;
+    }
+    .tabcontent ul {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    .tabcontent li {
+      margin-bottom: 10px;
+    }
+    .tabcontent strong {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+    }
+    body::after {
+      content: "";
+      display: block;
+      height: 80px;
+    }
+    #HTML{
+        background-color: rgb(32, 30, 30);
+        border-radius: 10px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Inicio')"><strong>Inicio</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Historia')"><strong>Historia de la WWW</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Tecnologia')"><strong>Tecnología y Arquitectura</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Funcionalidad')"><strong>Funcionalidad y Aplicaciones</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Seguridad')"><strong>Seguridad en la WWW</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Impacto')"><strong>Impacto Social y Cultural</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Futuro')"><strong>Desarrollo Futuro de la WWW</strong></button>
+      <button class="tablinks" onclick="openTab(event, 'Regulacion')"><strong>Regulación y Gobernanza de la WWW</strong></button>
+    </div>
+
+    <div id="Inicio" class="tabcontent">
+      <h3>Introducción a la WWW</h3>
+      <p>La World Wide Web (WWW) es un sistema de distribución de información que permite la interconexión de documentos y recursos a través de Internet. Fue desarrollada en 1989 por Tim Berners-Lee mientras trabajaba en el CERN, y ha evolucionado significativamente desde su creación.</p>
+      <p>La WWW utiliza protocolos y tecnologías como HTML, HTTP y URLs para permitir a los usuarios acceder y compartir información en la web. Su desarrollo ha transformado la manera en que las personas acceden a la información, realizan transacciones y se comunican.</p>
+      <br>
+      <center>
+      <iframe width="757" height="426" src="https://www.youtube.com/embed/gk1orqHVRSQ" title="Sir Tim Berners-Lee: conoce al padre de la Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/kXhXgcVpAU8" title="¿QUÉ ES LA WEB? | #TELOEXPLICO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <br>
+      <p>La WWW utiliza protocolos y tecnologías como HTML, HTTP y URLs para permitir a los usuarios acceder y compartir información en la web. Su desarrollo ha transformado la manera en que las personas acceden a la información, realizan transacciones y se comunican.</p>
+    </div>
+
+    <div id="Historia" class="tabcontent">
+      <h3>Historia de la WWW</h3>
+      <p>
+        La historia de la World Wide Web (WWW) comienza en 1989 cuando Tim Berners-Lee, trabajando en el CERN, inventó este revolucionario sistema de comunicación. El primer sitio web fue publicado en 1991, marcando el inicio de la transformación digital global. Con la introducción de navegadores como WorldWideWeb y Mosaic en los primeros años de la década de 1990, la web se popularizó rápidamente, expandiéndose a millones de sitios que hoy conforman la base de nuestra interacción en línea.
+
+La WWW se construye sobre tecnologías clave como HTML, el lenguaje de marcado para estructurar el contenido web, HTTP, el protocolo de transferencia de datos, y las URLs, las direcciones que nos permiten acceder a los recursos. Navegadores web como Chrome y Firefox, junto con servidores web, facilitan esta interacción.
+
+Desde sitios web estáticos hasta aplicaciones dinámicas, la web ha permitido el surgimiento de motores de búsqueda, comercio electrónico, redes sociales, y aplicaciones web. A lo largo de su evolución, la seguridad en la web ha cobrado gran importancia, con el uso de HTTPS para proteger la información y la implementación de prácticas como la autenticación de dos factores.
+
+El impacto social de la web es innegable: ha democratizado la información, fomentado una cultura digital y dado lugar a una nueva economía digital. Hacia el futuro, tecnologías como la Web 3.0, la descentralización, la inteligencia artificial y la realidad aumentada prometen redefinir la manera en que interactuamos con la web.
+
+Finalmente, la gobernanza de la WWW está en manos de organismos reguladores como ICANN, mientras que temas como la neutralidad de la red y la legislación global continúan siendo puntos clave en su desarrollo y regulación.
+      </p>
+      <p><strong>Origen y creación:</strong></p>
+      <ul>
+        <li>La WWW fue inventada por Tim Berners-Lee en 1989 mientras trabajaba en el CERN (Organización Europea para la Investigación Nuclear).</li>
+        <li>El primer sitio web fue publicado el 6 de agosto de 1991, describiendo el proyecto WWW.</li>
+      </ul>
+      <p><strong>Primeros desarrollos:</strong></p>
+      <ul>
+        <li>Introducción de los primeros navegadores web como el WorldWideWeb (1990) y Mosaic (1993), que ayudaron a popularizar la web.</li>
+      </ul>
+      <p><strong>Evolución:</strong></p>
+      <ul>
+        <li>El crecimiento exponencial de sitios web desde los años 90 hasta hoy, transformándose en una plataforma global indispensable.</li>
+      </ul>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/k0gvAyCubGQ" title="A brief history of the World Wide Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Tecnologia" class="tabcontent">
+      <h2><strong>Tecnología y Arquitectura</strong></h2>
+      <h2><strong>HTML (Hypertext Markup Language):</strong></h2>
+      <center>
+        <img id="HTML" src="https://th.bing.com/th/id/R.32b6fc12260c96f711150637f382841f?rik=Kpqh3wwHrBlvYQ&pid=ImgRaw&r=0" alt="HTML" style="width: 10%; height: 10%;">
+      </center>
+      <ul>
+        <li>El lenguaje fundamental para crear páginas web, utilizado para estructurar contenido.</li>
+      </ul>
+      <p>
+        HTML (HyperText Markup Language) es el lenguaje principal que se utiliza para la creación y estructuración de páginas web. Desde su creación en 1991 por Tim Berners-Lee, ha sido fundamental en el desarrollo de la World Wide Web, permitiendo a los navegadores web interpretar y mostrar el contenido de los sitios.
+      </p>
+      <center><h3>¿Qué es HTML?</h3></center>
+      <p>HTML es un lenguaje de marcado que utiliza etiquetas (tags) para estructurar el contenido en un documento web. Estas etiquetas proporcionan instrucciones a los navegadores sobre cómo deben mostrarse los diferentes elementos en una página, como textos, imágenes, tablas, formularios y enlaces. A diferencia de los lenguajes de programación, HTML no ejecuta lógica, sino que organiza el contenido.</p>
+      <br>
+      <p>HTML no funciona solo. Se complementa con otros lenguajes como CSS (Cascading Style Sheets), que se encarga del estilo visual de la página (colores, fuentes, márgenes, etc.), y JavaScript, que agrega interactividad y lógica a los sitios web.</p>
+      <center><h3>Historia de HTML</h3></center>
+      <p>
+        La primera versión de HTML fue lanzada en 1991, con una estructura muy básica y un conjunto limitado de etiquetas. Con el paso del tiempo, el lenguaje ha evolucionado, introduciendo más capacidades y adaptándose a las nuevas necesidades de la web. Algunas de las versiones más destacadas son:
+      </p>
+      <center><ul>
+        <li>HTML 2.0 (1995): La primera versión oficial del estándar HTML, que incluía soporte básico para formularios y tablas.</li>
+        <li>HTML 3.2 (1997): Esta versión mejoró el soporte para tablas, scripts y matemáticas.</li>
+        <li>HTML 4.01 (1999): Introdujo mejoras en la estructura de documentos y el soporte para hojas de estilo.</li>
+        <li>HTML5 (2014): La versión más reciente y avanzada, que incorpora nuevos elementos para multimedia, gráficos y capacidades semánticas.</li>
+      </ul></center>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/10GHKjgQIR0" title="¿Qué es HTML? bien explicado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <center><h3><strong>HTTP (Hypertext Transfer Protocol):</strong></h3></center>
+      <ul>
+        <li>El protocolo que permite la transferencia de datos en la web. Define cómo los mensajes son formateados y transmitidos, y cómo los servidores y navegadores deben responder a diversos comandos.</li>
+      </ul>
+    <p>
+        HTTP (Hypertext Transfer Protocol) es el protocolo de comunicación que permite la transferencia de información en la World Wide Web. Es un sistema que define cómo se deben intercambiar mensajes entre un cliente (generalmente un navegador web) y un servidor, facilitando la visualización de páginas web y el acceso a otros recursos en línea. HTTP es fundamental para la estructura de Internet y ha evolucionado con el tiempo para adaptarse a las necesidades de seguridad, velocidad y eficiencia de la web moderna.
+    </p>
+    
+    <center><h3>Historia y Evolución de HTTP</h3></center>
+    <p>
+        HTTP fue desarrollado por Tim Berners-Lee y su equipo en el CERN (Organización Europea para la Investigación Nuclear) en 1989, junto con la creación de la World Wide Web. La primera versión del protocolo, HTTP/0.9, era muy simple y solo permitía la transferencia de archivos de texto sin ningún tipo de formato o metadatos adicionales.
+    </p>
+    <p>Desde entonces, HTTP ha pasado por varias revisiones y actualizaciones importantes:</p>
+    
+    <h3>HTTP/0.9 (1991)</h3>
+    <p>
+        La versión más básica del protocolo, donde solo se permitían solicitudes GET para obtener archivos de texto. No existían códigos de estado HTTP ni encabezados (headers), lo que limitaba enormemente su funcionalidad.
+    </p>
+
+    <h3>HTTP/1.0 (1996)</h3>
+    <p>
+        Introdujo los códigos de estado HTTP (como el famoso 404 Not Found), encabezados para definir el tipo de contenido y la longitud de los datos transferidos. Permitió la transferencia de archivos multimedia y otros tipos de datos, no solo texto.
+    </p>
+
+    <h3>HTTP/1.1 (1997)</h3>
+    <p>
+        Se convirtió en la versión dominante durante muchos años. Introdujo varias mejoras, como el soporte para conexiones persistentes (keep-alive), lo que permitía que múltiples solicitudes se realizaran sobre una única conexión. Añadió control de caché, soporte para diferentes métodos (GET, POST, HEAD, OPTIONS, PUT, DELETE) y la capacidad de manejar transferencia de contenido parcial. Aumentó la eficiencia y redujo la latencia, mejorando la experiencia de los usuarios en la web.
+    </p>
+
+    <h3>HTTP/2 (2015)</h3>
+    <p>
+        Esta versión modernizó el protocolo al agregar características como la multiplexación, que permite que múltiples solicitudes se realicen simultáneamente sobre la misma conexión, reduciendo el tiempo de carga de las páginas web. Utiliza compresión de encabezados y una mejor priorización de recursos. Fue diseñado con el enfoque en mejorar la eficiencia y el rendimiento, especialmente en redes lentas o congestionadas.
+    </p>
+
+    <h3>HTTP/3 (2020)</h3>
+    <p>
+        HTTP/3 es la última versión del protocolo y está basado en QUIC, un nuevo protocolo de transporte diseñado sobre UDP (User Datagram Protocol), que es más rápido que TCP (Transmission Control Protocol), el estándar anterior. Mejora significativamente la velocidad de las conexiones y la experiencia del usuario, especialmente en redes con alta latencia o donde hay pérdida de paquetes. HTTP/3 también mejora la seguridad, ya que está completamente cifrado por defecto y usa mecanismos más rápidos para establecer conexiones seguras.
+    </p>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/70fwt29crLs" title="Qué es el Protocolo HTTP y para que lo utilizamos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <center><h3><strong>URL (Uniform Resource Locator):</strong></h3></center>
+      <ul>
+        <li>La dirección que permite acceder a los recursos en la web.</li>
+    <p>
+        La URL (Uniform Resource Locator) es una dirección única que identifica un recurso específico en la web. Es esencial para la navegación en Internet, ya que permite acceder a documentos, imágenes, videos, páginas web, y otros tipos de contenido alojados en servidores. Cada URL proporciona una ruta hacia un recurso y define su ubicación en Internet, lo que la convierte en una parte fundamental del funcionamiento de la World Wide Web.
+    </p>
+    <center><h3>Importancia de las URL en la Web</h3></center>
+    <p>
+        Las URL son esenciales para la web moderna, ya que permiten a los usuarios y a los navegadores localizar y acceder a recursos específicos de manera rápida y eficiente. Además, las URL juegan un papel crucial en la optimización para motores de búsqueda (SEO), ya que una estructura clara y bien organizada puede mejorar la visibilidad de un sitio en los resultados de búsqueda.
+    </p>
+    <p>
+        En resumen, las URL no solo identifican recursos en la web, sino que también son un elemento clave para la navegación, la seguridad y el posicionamiento en motores de búsqueda.
+    </p>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/WKbj6CxIndQ" title="Qué es URL 🖥  y qué significa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <h3><strong>Navegadores web:</strong></h3>
+      <ul>
+        <li>Programas como Chrome, Firefox, Safari, y Edge que permiten a los usuarios acceder y navegar por la web.</li>
+      </ul>
+      <h3>Navegadores Web Populares</h3>
+    <p>
+        Los navegadores web son programas esenciales que permiten a los usuarios acceder, explorar y visualizar contenido en la World Wide Web. A continuación se presenta información sobre algunos de los navegadores web más populares:
+    </p>
+
+    <h3>Google Chrome</h3>
+    <p>
+        Google Chrome es un navegador web desarrollado por Google. Lanzado en 2008, es conocido por su velocidad, simplicidad y estabilidad. Utiliza el motor de renderizado Blink y se destaca por su interfaz de usuario minimalista y su capacidad para manejar múltiples pestañas de manera eficiente. Chrome también cuenta con una vasta biblioteca de extensiones disponibles en la Chrome Web Store.
+    </p>
+
+    <h3>Mozilla Firefox</h3>
+    <p>
+        Mozilla Firefox es un navegador web de código abierto desarrollado por la Fundación Mozilla. Lanzado en 2004, Firefox es apreciado por su enfoque en la privacidad y seguridad del usuario. Utiliza el motor de renderizado Gecko y ofrece una amplia variedad de extensiones y personalizaciones a través de su sitio de complementos. Firefox también se enfoca en el cumplimiento de estándares web y el rendimiento.
+    </p>
+
+    <h3>Apple Safari</h3>
+    <p>
+        Apple Safari es el navegador web desarrollado por Apple, disponible en dispositivos macOS e iOS. Lanzado en 2003, Safari es conocido por su integración profunda con el ecosistema Apple y su enfoque en la eficiencia energética y la velocidad. Utiliza el motor de renderizado WebKit y ofrece características como la protección de seguimiento y la capacidad de ver vídeos en alta calidad. Safari también es el navegador predeterminado en los dispositivos Apple.
+    </p>
+
+    <h3>Microsoft Edge</h3>
+    <p>
+        Microsoft Edge es el navegador web desarrollado por Microsoft. Originalmente lanzado en 2015 como el sucesor de Internet Explorer, el navegador fue rediseñado en 2020 para basarse en el motor de renderizado Blink, el mismo que utiliza Google Chrome. La nueva versión de Edge ofrece un rendimiento mejorado, una integración sólida con los servicios de Microsoft, y herramientas de productividad como la colección de páginas web y la integración con Microsoft 365.
+    </p>
+
+    <p>
+        Cada uno de estos navegadores tiene sus propias características y ventajas, lo que permite a los usuarios elegir el que mejor se adapte a sus necesidades y preferencias.
+    </p>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/H2Pnadj2wvU" title="NAVEGADORES WEB😎 ¿Que son?🔍 ¿Como Funcionan? | Historia de los Navegadores Web, Ejemplos💻📱" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <center><h3><strong>Servidores web:</strong></h3></center>
+      <ul>
+        <li>Máquinas que almacenan sitios web y los entregan a los usuarios a través de sus navegadores.</li>
+      </ul>
+      <p>
+          Los servidores web son programas que almacenan, procesan y sirven contenido web a los usuarios a través de Internet. Estos servidores manejan las solicitudes de los navegadores web y responden con los recursos solicitados, como páginas HTML, imágenes, y archivos multimedia. A continuación, se describen algunos de los servidores web más populares:
+      </p>
+  
+      <h3>Apache HTTP Server</h3>
+      <p>
+          Apache HTTP Server, comúnmente conocido como Apache, es uno de los servidores web más antiguos y ampliamente utilizados. Lanzado en 1995, Apache es de código abierto y se destaca por su flexibilidad y extensibilidad. Ofrece una amplia gama de módulos que permiten personalizar y extender sus funcionalidades, incluyendo soporte para diversos lenguajes de programación y características avanzadas de seguridad y rendimiento.
+      </p>
+  
+      <h3>Nginx</h3>
+      <p>
+          Nginx es un servidor web y proxy inverso que se ha ganado una gran popularidad por su alto rendimiento y eficiencia en el manejo de conexiones concurrentes. Lanzado en 2004, Nginx es conocido por su capacidad para servir grandes volúmenes de tráfico con bajo consumo de recursos. Además de funcionar como servidor web, Nginx también se utiliza como proxy para balanceo de carga y cacheo de contenido.
+      </p>
+  
+      <h3>Microsoft Internet Information Services (IIS)</h3>
+      <p>
+          Microsoft Internet Information Services (IIS) es un servidor web desarrollado por Microsoft para su sistema operativo Windows. Lanzado en 1995, IIS es conocido por su integración con otras tecnologías de Microsoft, como .NET y ASP.NET. Ofrece características avanzadas de seguridad, administración y soporte para aplicaciones empresariales, lo que lo convierte en una opción popular en entornos corporativos y de desarrollo en Windows.
+      </p>
+  
+      <h3>LiteSpeed</h3>
+      <p>
+          LiteSpeed es un servidor web de alto rendimiento que se enfoca en la velocidad y la eficiencia. Lanzado en 2003, LiteSpeed es conocido por su capacidad para manejar tráfico web intensivo con un uso mínimo de recursos. Ofrece características como la aceleración de PHP, la protección contra ataques DDoS y un sistema de cacheo integrado. LiteSpeed está disponible en versiones de código abierto y comercial.
+      </p>
+  
+      <p>
+          Cada servidor web tiene sus propias características y ventajas, lo que permite a los administradores de sistemas y desarrolladores elegir el que mejor se adapte a sus necesidades específicas.
+      </p>
+      <br>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/Zrybo9Pt7ys" title="¿Qué es un servidor web? | zoneclass.com 👈" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Funcionalidad" class="tabcontent">
+      <h3>Funcionalidad y Aplicaciones</h3>
+      <p><strong>Sitios web estáticos vs. dinámicos:</strong></p>
+      <ul>
+        <li>Los sitios web estáticos son aquellos cuyo contenido no cambia a menos que el código fuente sea modificado. Estos sitios utilizan HTML y CSS para estructurar y diseñar las páginas, y son más simples de desarrollar y mantener.</li>
+        <li>Los sitios web dinámicos, en cambio, generan contenido que puede cambiar en función de la interacción del usuario o de datos almacenados en bases de datos. Utilizan lenguajes de programación como JavaScript, PHP o Python para crear contenido dinámico y personalizar la experiencia del usuario.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/XysOWTZd4NI" title="Diferencia entre página web Dinámica y Estática | Curso de Desarrollo Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Motores de búsqueda:</strong></p>
+      <ul>
+        <li>Los motores de búsqueda son herramientas que permiten a los usuarios encontrar información en la web. Utilizan algoritmos para indexar y clasificar el contenido de las páginas web, y devuelven resultados relevantes en función de las consultas de los usuarios.</li>
+        <li>Ejemplos de motores de búsqueda populares incluyen Google y Bing. Estos motores utilizan técnicas avanzadas de indexación y ranking para ofrecer resultados precisos y útiles a los usuarios.</li>
+      </ul>
+      <center>
+        <iframe width="829" height="415" src="https://www.youtube.com/embed/RP0Kkblf5Rg" title="¿Qué es y cómo funciona un Motor de Búsqueda en Internet?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>E-commerce:</strong></p>
+      <ul>
+        <li>El comercio electrónico (e-commerce) se refiere a la compra y venta de productos y servicios a través de la web. Las tiendas en línea permiten a los usuarios realizar transacciones de manera conveniente y segura desde cualquier lugar.</li>
+        <li>Ejemplos de plataformas de e-commerce incluyen Amazon y eBay. Estas plataformas ofrecen una amplia gama de productos y servicios, y utilizan tecnologías avanzadas para gestionar pagos, envíos y atención al cliente.</li>
+      </ul>
+      <center>
+        <iframe width="829" height="415" src="https://www.youtube.com/embed/tuG6f6BIdVc" title="¿Qué es el ECOMMERCE?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Redes sociales:</strong></p>
+      <ul>
+        <li>Las redes sociales son plataformas que permiten a los usuarios interactuar, compartir contenido y conectarse con otras personas. Estas plataformas facilitan la comunicación y el intercambio de información en tiempo real.</li>
+        <li>Ejemplos de redes sociales incluyen Facebook, Twitter e Instagram. Cada plataforma tiene características únicas y se enfoca en diferentes aspectos de la interacción social y el contenido multimedia.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/6R9kxdaWtAI" title="Qué es una red social" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Aplicaciones web:</strong></p>
+      <ul>
+        <li>Las aplicaciones web son programas que se ejecutan dentro de un navegador web. Estas aplicaciones proporcionan una funcionalidad específica y permiten a los usuarios realizar tareas en línea.</li>
+        <li>Ejemplos de aplicaciones web incluyen Google Docs, Slack y Trello. Estas aplicaciones utilizan tecnologías web modernas para ofrecer una experiencia de usuario fluida y accesible desde cualquier dispositivo con conexión a Internet.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/qfehzr3B8To" title="Qué es una aplicacion web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Seguridad" class="tabcontent">
+      <h3>Seguridad en la WWW</h3>
+      <p><strong>HTTPS (Hypertext Transfer Protocol Secure):</strong></p>
+      <ul>
+        <li>HTTPS es la versión segura del protocolo HTTP, que encripta la comunicación entre el navegador y el servidor para proteger la información transmitida.</li>
+        <li>El uso de HTTPS asegura que los datos sensibles, como contraseñas y detalles de pago, estén protegidos de posibles interceptaciones y ataques.</li>
+      </ul>
+      <p><strong>Amenazas comunes:</strong></p>
+      <ul>
+        <li>El phishing es una técnica utilizada por los atacantes para obtener información confidencial engañando a los usuarios.</li>
+        <li>El malware es software malicioso diseñado para dañar o explotar sistemas. Incluye virus, gusanos y spyware.</li>
+        <li>El ransomware es un tipo de malware que cifra los archivos del usuario y exige un rescate para liberarlos.</li>
+        <li>Los ataques de denegación de servicio (DDoS) buscan saturar un servidor o red con tráfico para hacerlo inaccesible.</li>
+      </ul>
+      <p><strong>Buenas prácticas:</strong></p>
+      <ul>
+        <li>El uso de contraseñas seguras y la autenticación de dos factores son prácticas recomendadas para proteger cuentas y datos.</li>
+        <li>Es importante navegar solo en sitios seguros, indicados por el uso de HTTPS en la URL.</li>
+      </ul>
+      <p><strong>Privacidad:</strong></p>
+      <ul>
+        <li>Las cookies son pequeños archivos que los sitios web utilizan para almacenar información sobre la sesión del usuario.</li>
+        <li>El rastreo en la web implica la recopilación de datos sobre el comportamiento de los usuarios para personalizar la experiencia de navegación.</li>
+        <li>Las leyes de privacidad, como el GDPR y el CCPA, regulan cómo se deben manejar los datos personales y proporcionan derechos a los usuarios para proteger su información.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/60606AHuq8c" title="¿Qué es y cómo funciona HTTPS?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Impacto" class="tabcontent">
+      <h3>Impacto Social y Cultural</h3>
+      <p><strong>Accesibilidad:</strong></p>
+      <ul>
+        <li>La accesibilidad web busca garantizar que las personas con discapacidades puedan acceder y utilizar sitios web de manera efectiva.</li>
+        <li>Los estándares como WCAG (Web Content Accessibility Guidelines) proporcionan pautas para crear contenido accesible para todos los usuarios.</li>
+      </ul>
+      <p><strong>Democratización de la información:</strong></p>
+      <ul>
+        <li>La WWW ha facilitado el acceso a una gran cantidad de información y recursos educativos, ayudando a reducir las barreras de conocimiento.</li>
+        <li>Los usuarios ahora pueden acceder a información valiosa y participar en comunidades globales de aprendizaje y colaboración.</li>
+      </ul>
+      <p><strong>Economía digital:</strong></p>
+      <ul>
+        <li>La web ha dado lugar a nuevas industrias y oportunidades laborales, como el desarrollo web, el marketing digital y el comercio electrónico.</li>
+        <li>La economía digital ha transformado la forma en que las empresas operan y cómo los consumidores compran y consumen productos y servicios.</li>
+      </ul>
+      <p><strong>Cultura digital:</strong></p>
+      <ul>
+        <li>La WWW ha cambiado la forma en que las personas se comunican y comparten contenido cultural, desde redes sociales hasta plataformas de streaming.</li>
+        <li>La cultura digital incluye el impacto de la web en la música, el cine, los videojuegos y otras formas de expresión artística.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/eIuJeSrPcx8" title="El internet y su impacto mundial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Futuro" class="tabcontent">
+      <h3>Desarrollo Futuro de la WWW</h3>
+      <p><strong>Web 3.0 (Web semántica):</strong></p>
+      <ul>
+        <li>La Web 3.0 se refiere a la evolución hacia una web más inteligente donde los datos están estructurados de manera que las máquinas puedan entender y procesar mejor la información.</li>
+        <li>Esto permitirá una mayor interoperabilidad y personalización en la web, con aplicaciones más inteligentes y contextuales.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/mGQ6wdnJtMg" title="¿Qué es la WEB 3.0? - EXPLICADO en 4 MINUTOS | Ac2ality" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Descentralización:</strong></p>
+      <ul>
+        <li>La descentralización busca reducir el control de grandes corporaciones sobre la web y promover una infraestructura más distribuida.</li>
+        <li>Proyectos como blockchain están a la vanguardia de estos esfuerzos, ofreciendo soluciones para la seguridad, la privacidad y la transparencia en la web.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/QdAdncYpxzo" title="DECENTRALIZACIÓN : Qué es una RED DESCENTRALIZADA y por qué es importante en la WEB 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Inteligencia Artificial y la Web:</strong></p>
+      <ul>
+        <li>La integración de la inteligencia artificial en la web está transformando la manera en que interactuamos con el contenido y los servicios en línea.</li>
+        <li>Desde chatbots hasta sistemas de recomendación, la IA está mejorando la personalización y la eficiencia de las experiencias en línea.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/_tA5cinv0U8" title="¿Qué es y cómo funciona la INTELIGENCIA ARTIFICIAL?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+      <p><strong>Realidad Aumentada y Realidad Virtual en la web:</strong></p>
+      <ul>
+        <li>La realidad aumentada (AR) y la realidad virtual (VR) están creando experiencias web más inmersivas y tridimensionales.</li>
+        <li>Estas tecnologías están abriendo nuevas posibilidades para la interacción y el entretenimiento en línea, así como para aplicaciones educativas y comerciales.</li>
+      </ul>
+      <center>
+        <iframe width="757" height="426" src="https://www.youtube.com/embed/NfQPkY0cp2I" title="¿Qué es realidad aumentada?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </center>
+    </div>
+
+    <div id="Regulacion" class="tabcontent">
+      <h3>Regulación y Gobernanza de la WWW</h3>
+      <p><strong>Organismos reguladores:</strong></p>
+      <ul>
+        <li>ICANN (Internet Corporation for Assigned Names and Numbers) es el organismo encargado de gestionar los nombres de dominio y las direcciones IP en la web.</li>
+        <li>ICANN trabaja para asegurar la estabilidad y la seguridad de la infraestructura de Internet.</li>
+      </ul>
+      <p><strong>Neutralidad de la red:</strong></p>
+      <ul>
+        <li>La neutralidad de la red es el principio de que todos los datos en la web deben ser tratados de manera igual, sin discriminación ni preferencia.</li>
+        <li>Este principio asegura que los proveedores de servicios de Internet no puedan bloquear o ralentizar el acceso a determinados contenidos o servicios.</li>
+      </ul>
+      <p><strong>Legislación global:</strong></p>
+      <ul>
+        <li>La regulación de la web varía entre países, con algunos imponiendo censura y otros promoviendo la libertad de expresión.</li>
+        <li>Las leyes y políticas relacionadas con la web son diversas y pueden afectar la forma en que los usuarios acceden a la información y se comunican en línea.</li>
+      </ul>
+      <center>
+        <p>
+            La regulación y gobernanza de la World Wide Web son fundamentales para mantener su estabilidad y accesibilidad global. Organismos como ICANN aseguran que los nombres de dominio y direcciones IP se gestionen de manera segura y eficiente, garantizando el funcionamiento de la infraestructura de Internet. La neutralidad de la red, un principio clave, defiende la igualdad en el tratamiento de los datos, evitando que los proveedores de Internet discriminen o limiten el acceso a ciertos contenidos. Sin embargo, la legislación global es diversa, con algunas regiones que restringen el acceso a la información, mientras otras fomentan la libertad de expresión, lo que refleja el impacto significativo de las políticas locales en la experiencia web.
+        </p>
+      </center>
+    </div>
+
+  </div>
+<footer>
+    <p>Carlos Adrián Serrano Samayoa. Programación de aplicaciones web. 5to L.</p>
+</footer>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementsByClassName("tablinks")[0].click();
+  </script>
+</body>
+</html>
